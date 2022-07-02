@@ -1,19 +1,19 @@
 #include <stdio.h>
 
 /**
- *main -> assign a random number to a variable n each time it is executed and print the last digitnof the number stored in the variable n
- *Return : always 0
+ *main -> prints all single digit numbers of base 10 starting from 0,
+ *followed by a new line, using putchar
+ *Return : Always 0 (Success)
  */
 int main(void)
 {
-        char ch;
-        for (ch = '2'; ch >= 'a'; ch--)
-        {
-                putchar(ch);
-        }
-        putchar(10); /* this is an ascii code for new line*/
-        
+        int n;
 
+        for (n = 48; n < 58; n++)
+        {
+                putchar(n);
+        }
+        putchar('\n');
         return (0);
 }
 
