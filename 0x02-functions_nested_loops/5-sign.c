@@ -2,21 +2,23 @@ nclude "main.h"
 /**
  * print_sign - entry point
  * @n : number to check
- * Return:0 or 1
+ * Return: 1, 0, -1
  */
 int print_sign(int n)
 {
-	int numz;
-
-	if (n > o)
+	if (n > 0)
 	{
-		numz = 1;
 		_putchar('+');
+		return (1);
 	}
-	else if(n == 0)
+	else if (n == 0)
 	{
-		numz = 0;
-		_putchar('-');
+		_putchar('0');
+		return (0);
 	}
-	return (numz);
+	else
+	{
+		_putchar('-');
+		return (-1);
+	}
 }

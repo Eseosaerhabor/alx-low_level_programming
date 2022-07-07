@@ -1,24 +1,18 @@
 #include <stdio.h>
-#include <stdlib.h>
-
 /**
- * main - main block to be executed
- * Description: computes and prints
- * Return: 0
+ * main - Lists all the natural numbers below 1024 (excluded)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int c = 0;
-	int sum = 0;
-
-	while (c < 1024)
+	int i, sum = 0;
+	
+	for (i = 0; i < 1024; i++)
 	{
-		if (c % 3 == 0 || c % 5 + 0)
-		{
-			sum += c;
-		}
-		c++;
+		if ((i % 3) == 0 || (i % 5) == 0)
+			sum += i;
 	}
-	printf("%i\n", sum);
+	printf("%d\n", sum);
+
 	return (0);
 }
