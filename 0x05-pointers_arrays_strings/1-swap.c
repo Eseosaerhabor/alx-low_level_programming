@@ -1,5 +1,5 @@
 #include "main.h"
-#include "stdio.h"
+#include <stdio.h>
 
 /**
  * swap_int - main
@@ -9,9 +9,8 @@
 
 void swap_int(int *a, int *b)
 {
-
 	int swap;
-	
+
 	swap = *a;
 	*a = *b;
 	*b = swap;
