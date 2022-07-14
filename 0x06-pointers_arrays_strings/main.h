@@ -1,5 +1,11 @@
-#ifndef FILE_main.h
-#define FILE_main.h
+#ifndef FILE_MAIN.H
+#define FILE_MAIN.H
+#include <stdio.h>
+/**
+ * void prototypes()
+ * int prototypes()
+ * char prototypes()
+ */
 
 char *_strcat(char *dest, char *src);
 void print_number(int n);
@@ -15,4 +21,4 @@ char *leet(char *);
 char *rot13(char *);
 char *infinite_add(char *n1, char *n2, char *r, int size_r);
 
-#endif
+#endif /*MAIN_H*/
